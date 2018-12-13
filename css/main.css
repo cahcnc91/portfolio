@@ -63,7 +63,6 @@ body {
 
 .button:link, .button:visited {
   text-decoration: none;
-  padding: 1.5rem 4rem;
   display: inline-block;
   transition: all 0.2s;
   text-decoration: none; }
@@ -76,6 +75,7 @@ body {
   transform: translateY(-0.1rem); }
 
 .button--white {
+  padding: .8rem 12rem;
   border: 0.2rem solid #fff;
   color: #fff;
   font-size: 1.8rem;
@@ -85,6 +85,20 @@ body {
   .button--white:hover {
     background-color: #55c57a;
     border-color: #55c57a; }
+
+.button--transparent-green {
+  border: 0.2rem solid #fff;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 4rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
+  .button--transparent-green:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #28b485; }
 
 .composition__photo {
   width: 80%;
@@ -120,11 +134,12 @@ i.fas {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 24rem;
+  width: 30rem; }
   .card__side {
     border-radius: 3px;
-    height: 50rem;
-    transition: all .8s ease;
+    height: 24rem;
+    transition: all 0.8s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -144,9 +159,9 @@ i.fas {
     transform: rotateY(0deg); }
   .card__image {
     background-size: cover;
-    height: 20.0rem;
+    height: 23rem;
     border: 2px solid #f7f7f7;
-    margin: 1rem; }
+    margin: 0.5rem; }
     .card__image--1 {
       background-image: url(../img/puppydate.jpg); }
     .card__image--2 {
@@ -162,10 +177,21 @@ i.fas {
     right: 1.5rem; }
   .card__heading-span {
     padding: 0.5rem 1rem;
-    background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.85), rgba(119, 119, 119, 0.85)); }
+    background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.65), rgba(119, 119, 119, 0.65)); }
+  .card__cta {
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center; }
+  .card__info {
+    color: #fff; }
 
-.card-details {
-  text-align: center; }
+.paragraph--card {
+  font-size: 1.6rem;
+  margin-bottom: 0; }
+  .paragraph--card:last-child {
+    margin-bottom: 2rem; }
 
 .row {
   max-width: 95rem;
@@ -217,7 +243,7 @@ i.fas {
     height: 4.5rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
