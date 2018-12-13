@@ -1,0 +1,17 @@
+.button--animated {
+
+  &--rotate {
+    margin-left: .8rem; 
+  }
+
+  &--rotate i {
+    font-size: 15px;
+    transition: all 0.4s ease;
+    
+  }
+  &:hover {
+    & i {
+      transform: rotateZ(90deg);
+    }
+  }
+}

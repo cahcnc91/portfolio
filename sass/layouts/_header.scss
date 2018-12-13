@@ -1,0 +1,71 @@
+.header {
+  height: 100vh;
+  position: absolute;
+  /*
+  background-image: linear-gradient(
+    to right bottom,
+     rgba(127, 213, 112, 0.801),
+      rgba(40, 180, 133, 0.801)) , 
+      url("../img/background-code.jpg");
+  */
+  background-image: linear-gradient(
+      rgba($color-black, 0.8),
+      rgba($color-black, 0.8)
+    ),
+    url("../img/computer.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+
+  &__logo {
+    height: 4.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__text-box > h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+  }
+
+  &__text-static {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.7rem;
+  }
+
+  &__button {
+    bottom: 0;
+    display: block;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.typewrite {
+  color: $color-white;
+  text-decoration: none;
+}

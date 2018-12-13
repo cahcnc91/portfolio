@@ -1,0 +1,14 @@
+.composition {
+
+  &__photo {
+     width: 80%;
+     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+     border-radius: 2px;
+     transition: all .2s ease-in-out;
+  }
+
+  &__photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+  }
+}

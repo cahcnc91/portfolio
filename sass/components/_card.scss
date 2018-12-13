@@ -1,0 +1,78 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    border-radius: 3px;
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    backface-visibility: hidden;border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+    &--front {
+      background-color:$color-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to right bottom, $color-primary-lighter, $color-primary-darker);
+    }
+  }
+
+
+  &:hover &__side--front{
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back{
+    transform: rotateY(0deg);
+  }
+
+  &__image {
+    background-size: cover;
+    height: 20.0rem;
+    border: 2px solid $color-grey-light-1;
+    margin: 1rem;
+
+    &--1 {
+      background-image: url(../img/puppydate.jpg);
+    }
+
+    &--2 {
+      background-image: url(../img/grocery-app.jpg);
+    }
+
+    &--3 {
+      background-image: url(../img/cookopedia.jpg);
+    }
+  }
+
+  &__heading {
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: #fff;
+    position: absolute;
+    top: 19rem;
+    right: 1.5rem;
+  } 
+
+  &__heading-span {
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(to right bottom, 
+    rgba($color-grey-light-1, .85), 
+    rgba($color-grey-dark, .85));
+  }
+
+
+}
+
+.card-details {
+  text-align: center;
+}

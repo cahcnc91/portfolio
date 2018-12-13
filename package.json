@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio of camila",
+  "main": "index.js",
+  "scripts": {
+    "css:watch": "npm run css && node-sass src/style.scss -wo dist",
+    "build-css": "node-sass -o css sass/main.scss",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Camila",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "nodemon": "^1.18.8"
+  }
+}

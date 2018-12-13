@@ -1,0 +1,265 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.button--animated--rotate {
+  margin-left: .8rem; }
+
+.button--animated--rotate i {
+  font-size: 15px;
+  transition: all 0.4s ease; }
+
+.button--animated:hover i {
+  transform: rotateZ(90deg); }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 2.6rem;
+  font-weight: 700; }
+
+.paragraph {
+  font-size: 1.8rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.button:link, .button:visited {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  transition: all 0.2s;
+  text-decoration: none; }
+
+.button:hover {
+  cursor: pointer;
+  transform: translateY(-0.3rem); }
+
+.button:active {
+  transform: translateY(-0.1rem); }
+
+.button--white {
+  border: 0.2rem solid #fff;
+  color: #fff;
+  font-size: 1.8rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
+  .button--white:hover {
+    background-color: #55c57a;
+    border-color: #55c57a; }
+
+.composition__photo {
+  width: 80%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  transition: all .2s ease-in-out; }
+
+.composition__photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .feature-box__icon {
+    font-size: 30px;
+    margin-bottom: .5rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
+i.fas {
+  font-size: 4rem; }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    border-radius: 3px;
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+  .card__image {
+    background-size: cover;
+    height: 20.0rem;
+    border: 2px solid #f7f7f7;
+    margin: 1rem; }
+    .card__image--1 {
+      background-image: url(../img/puppydate.jpg); }
+    .card__image--2 {
+      background-image: url(../img/grocery-app.jpg); }
+    .card__image--3 {
+      background-image: url(../img/cookopedia.jpg); }
+  .card__heading {
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: #fff;
+    position: absolute;
+    top: 19rem;
+    right: 1.5rem; }
+  .card__heading-span {
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.85), rgba(119, 119, 119, 0.85)); }
+
+.card-details {
+  text-align: center; }
+
+.row {
+  max-width: 95rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 5rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 5rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2*5rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2*((100% - 2 * 5rem) / 3) + 5rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3*5rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3*5rem) / 4) + 5rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3*5rem) / 4) + 2 * 5rem); }
+
+.header {
+  height: 100vh;
+  position: absolute;
+  /*
+  background-image: linear-gradient(
+    to right bottom,
+     rgba(127, 213, 112, 0.801),
+      rgba(40, 180, 133, 0.801)) , 
+      url("../img/background-code.jpg");
+  */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/computer.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 3rem;
+    left: 3rem; }
+  .header__logo {
+    height: 4.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__text-box > h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: 1rem; }
+  .header__text-static {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.7rem; }
+  .header__button {
+    bottom: 0;
+    display: block;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.typewrite {
+  color: #fff;
+  text-decoration: none; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -15vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/computer.jpg");
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed; }
+
+.section-projects {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -15rem; }
