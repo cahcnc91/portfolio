@@ -1,6 +1,6 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 25rem 0;
+  padding: 25rem 30rem;
   margin-top: -15vh;
 }
 
@@ -20,4 +20,15 @@
   background-color: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -15rem;
+}
+
+.section-skills {
+  padding: 0 0 15rem 0;
+  background-color: $color-grey-light-1;
+}
+
+footer {
+  background-color: $color-grey-dark-2;
+  padding: 10rem 0;
+  font-size: 1.4rem;
 }

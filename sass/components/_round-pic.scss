@@ -1,0 +1,43 @@
+.figure-shape {
+  width: 30rem;
+  height: 30rem;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  transform: translateX(-3rem);
+  position: relative;
+  
+
+  &__image {
+    height: 100%;
+    transform: translateX(-4rem) scale(1);
+    backface-visibility: hidden;
+    transition: all .5s;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-align: center;
+    opacity: 0;
+    backface-visibility: hidden;
+    font-size: 2.6rem;
+    font-weight: 400;
+    transition: all .5s;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__image {
+    transform: translateX(-4rem) scale(1.4);
+    filter: blur(3px) brightness(80%);
+  }
+}
