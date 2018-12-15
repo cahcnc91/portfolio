@@ -1,25 +1,29 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 25rem 30rem;
+  padding: 20rem 0rem 25rem 0;
   margin-top: -15vh;
+  margin-bottom: -30vh;
 }
 
-.section-features {
+.section-stripe {
+  top: 12vh;
+  height: 70vh;
   padding: 20rem 0;
   background-image: linear-gradient(
-    rgba($color-black, 0.8),
-    rgba($color-black, 0.8)
-  ),
-  url("../img/computer.jpg");
+      rgba($color-black, 0.8),
+      rgba($color-black, 0.8)
+    ),
+    url("../img/computer.jpg");
   background-size: cover;
   position: relative;
   background-attachment: fixed;
+  clip-path: polygon(0 1%, 100% 25%, 100% 74%, 0 50%);
 }
 
 .section-projects {
   background-color: $color-grey-light-1;
-  padding: 25rem 0;
-  margin-top: -15rem;
+  padding: 20rem 0;
+  margin-top: -25vh;
 }
 
 .section-skills {
@@ -32,3 +36,5 @@ footer {
   padding: 10rem 0;
   font-size: 1.4rem;
 }
+
+

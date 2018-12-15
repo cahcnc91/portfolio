@@ -9,32 +9,38 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" type="image/png" href="img/logo-cc-black.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
         <title>camilacoder Javascript | Full-Stack Developer</title>
     </head>
     <body>
         <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-            <label class="navigation__button"><MENU:c></MENU:c></label>
-            <div class="navigation__background"></div>
+            <input type="checkbox" name="check-test" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="" class="navigation__link">ABOUT ME</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"></a>PROJECTS</li>
-                    <li class="navigation__item"><a href="" class="navigation__link"></a>SKILLS</li>
-                    <li class="navigation__item"><a href="" class="navigation__link"></a>CONTACT ME</li>
+                    <li class="navigation__item"><a href="#about" class="navigation__link">ABOUT ME</a></li>
+                    <li class="navigation__item"><a href="#projects" class="navigation__link">PROJECTS</a></li>
+                    <li class="navigation__item"><a href="#skills" class="navigation__link">SKILLS</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link">CONTACT ME</a></li>
                 </ul>
             </nav>
         </div>
         <header class="header">
+            <!--
                 <div class="header__logo-box">
                     <img src="img/logo-cc-white.png" alt="logo" class="header__logo">
                 </div>
                 <div class="header__text-static">
                     <h2></h2>
                 </div>
-                
+            -->   
 
                 <div class="header__text-box">
                     <h1>
@@ -44,15 +50,14 @@
                 </div>
                
                 <div class="header__button">
-                    <a href="#" class="button button--white button--animated">View my work <span class="button--animated--rotate"><i class="fa fa-arrow-right"></i></span></a>
+                    <a href="#projects" class="button button--white button--animated">View my work <span class="button--animated--rotate"><i class="fa fa-arrow-right"></i></span></a>
                 </div>
         </header>
 
         <main>
-            <section class="section-about">
-
+            <section class="section-about" id="about">
                 <div class="row">
-                    <div class="about">
+                    <div class="about u-margin-bottom-medium">
                         <figure class="figure-shape">
                             <img src="img/camilaluna.png" alt="camila coder web developer" class="figure-shape__image">  
                             <figcaption class="figure-shape__caption">
@@ -69,11 +74,8 @@
                     </div>
 
                 </div>
-                
-            </section>
 
-            <section class="section-features">
-                    <div class="row">
+                <div class="row">
                         <div class="col-1-of-4">
                             <div class="feature-box">
                                     <i class="fas fa-bolt feature-box__icon"></i>
@@ -106,10 +108,14 @@
                             </div>
                         </div>
 
-                    </div>          
+                    </div>   
+                
             </section>
 
-            <section class="section-projects">
+            <section class="section-stripe">      
+            </section>
+
+            <section class="section-projects" id="projects">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">Projects</h2>
                 </div>
@@ -128,7 +134,7 @@
                                         <p class="paragraph--card">React-Redux</p>
                                         <p class="paragraph--card">Mongodb</p>
                                     </div>
-                                    <a href="" class="button button--transparent-green">VISIT</a>
+                                    <a href="https://cahcnc-puppydate.herokuapp.com/" class="button button--transparent-green" target="_blank" rel="noopener noreferrer">VISIT</a>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +152,7 @@
                                         <p class="paragraph--card">React</p>
                                         <p class="paragraph--card">Sass</p>
                                     </div>
-                                    <a href="" class="button button--transparent-green">VISIT</a>
+                                    <a href="https://cahcnc91-grocerylist.herokuapp.com/" class="button button--transparent-green" target="_blank" rel="noopener noreferrer">VISIT</a>
                                 </div>
                             </div>
                         </div>
@@ -164,16 +170,21 @@
                                             <p class="paragraph--card">Postgres</p>
                                             <p class="paragraph--card">Bootstrap</p>
                                         </div>
-                                        <a href="" class="button button--transparent-green">VISIT</a>
+                                        <a href="https://cahcnc91-cookopedia.herokuapp.com/" class="button button--transparent-green" target="_blank" rel="noopener noreferrer">VISIT</a>
                                     </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="row">
+                    
+                </div>
+
             </section> 
             
-            <section class="section-skills">
+            <!--
+            <section class="section-skills" id="skills">
                 <div class="bg-video">
                     <video class="bg-video__content">
                         <source src="">
@@ -191,10 +202,17 @@
                     </div>
                 </div>
             </section>
+
+        -->
+                
+
+            <section class="section-contact">
+                    
+            </section>
         </main>
 
         <footer>
-            <div class="row footer">
+            <div class="row">
                 <div class="footer__logo-box">
 
                 </div>
@@ -207,7 +225,8 @@
                 </div>
                 </div>
                 <div class="row footer__copyright">
-                    <p>Copyright &copy; 2018 by Camila Niero Costa. All rights reserved.</p>
+                    <p>Copyright &copy; 2018 by Camila Niero Costa</p>
+                    <p>All rights reserved.</p>
                 </div>
             </footer>
 
@@ -280,7 +299,11 @@
                     </div>
         </section>
     -->
-        
-        <script src="js/script.js"></script>
+
+    <script src="js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8UsLzaEzCoIiltE8zTmA4a5Gb49SMxNw&callback=initMap">
+    </script>
+
     </body>
 </html>
