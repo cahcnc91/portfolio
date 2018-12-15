@@ -1,0 +1,20 @@
+.story {
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, .1);
+  background-color: rgba($color-white, .6);
+  border-radius: 3px;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+
+  &__icon {
+    font-size: 4rem;
+    margin-bottom: .5rem;
+    background-image: linear-gradient(to right, $color-primary-lighter, $color-primary-darker);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+  }
+
+  
+}
