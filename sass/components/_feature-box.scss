@@ -1,5 +1,4 @@
 .feature-box {
-
   background-color: rgba($color-white, .8);
   font-size: 1.5rem;
   padding: 2.5rem;
@@ -7,11 +6,13 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: transform .3s;
-
-
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  
 
   &__icon {
-    font-size: 30px;
+    font-size: 4rem;
     margin-bottom: .5rem;
     background-image: linear-gradient(to right, $color-primary-lighter, $color-primary-darker);
     -webkit-background-clip: text;
@@ -23,9 +24,34 @@
     transform: translateY(-1.5rem) scale(1.03);
   }
 
+  &__skills {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+
+    &--small {
+      width: 50%;
+      display: flex;
+      margin: 0 auto;
+    }
+    
+
+    &--small-icon {
+      font-size: 2rem;
+      background-image: linear-gradient(to right, $color-primary-lighter, $color-primary-darker);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    &--less {
+      
+    }
+  }
+
+  &__text {
+    padding-left: 2rem;
+  }
+
 }
 
-i.fas {
-  font-size: 4rem;
-}
 

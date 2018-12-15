@@ -48,4 +48,21 @@
     }
   }
 
+  &--green {
+    background-image: linear-gradient(to right, $color-primary-lighter, $color-primary-darker);
+    border-radius: 3px;
+    color: $color-white;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 1rem 7rem;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    &:hover {
+      background-image: linear-gradient(to right, $color-primary-lighter, $color-primary-darker);
+
+    }
+  }
+
 }

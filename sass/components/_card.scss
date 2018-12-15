@@ -2,8 +2,9 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 24rem;
-  width: 30rem;
+  height: 23rem;
+  width: 29rem;
+  margin: 0 auto;
 
   &__side {
     border-radius: 3px;
@@ -98,4 +99,3 @@
     margin-bottom: 2rem;
   }
 }
-

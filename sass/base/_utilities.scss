@@ -13,3 +13,11 @@
 .u-margin-bottom-small {
   margin-bottom: 2rem;
 }
+
+.center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
