@@ -6,6 +6,7 @@
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
+  transition: transform .3s;
 
   &__icon {
     font-size: 4rem;
@@ -14,6 +15,10 @@
     -webkit-background-clip: text;
     color: transparent;
     
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
   }
 
   

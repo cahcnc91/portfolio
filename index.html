@@ -24,10 +24,9 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#about" class="navigation__link">ABOUT ME</a></li>
+                    <li class="navigation__item"><a href="#about" class="navigation__link">ABOUT</a></li>
                     <li class="navigation__item"><a href="#projects" class="navigation__link">PROJECTS</a></li>
-                    <li class="navigation__item"><a href="#skills" class="navigation__link">SKILLS</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">CONTACT ME</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">CONTACT ME</a></li>
                 </ul>
             </nav>
         </div>
@@ -64,7 +63,7 @@
                         </figure>
                         <div class="about-me">
                             <p class="paragraph">
-                                I'm a full-stack web developer based in NYC. I enjoy turning complex problems into simple apps with cool designs. I'm originally from Brazil, and when I'm not coding, you can find me hiking some crazy trail down there, or around here.
+                                I'm a full-stack web developer based in NYC. I enjoy turning complex problems into simple apps with cool designs. I'm originally from Brazil, and when I'm not coding, you can find me either hiking around there or upstate NY.
                             </p>
                         </div>
                     </div>
@@ -221,8 +220,7 @@
                     <p class="paragraph projects__messages">
                         Wanna get in touch or talk about a project? Reach me out:
                         <br /><i class="far fa-envelope"></i> camilanierocosta@hotmail.com</p>
-=
-                    <a href="#contact" class="button button--green button--animated">More contact info <span class="button--animated--rotate"><i class="fa fa-arrow-right"></i></span></a>
+                    <a href="#contact" class="button button--animated button--green">More contact info <span class="button--animated--rotate"><i class="fa fa-arrow-right"></i></span></a>
                 </div>
             </section>
             
@@ -238,35 +236,71 @@
 
     
                     <div class="row">
-                            <div class="col-1-of-4">
-                                <div class="story">
-                                    <i class="fas fa-running story__icon"></i>
-                                    <h3 class="heading-tertiary">Fast</h3>   
-                                    <p class="story__text">Faster user experience by using lastest technologies & frameworks.</p>
+                                <div class="col-1-of-4">
+                                    <div class="story">
+                                        <i class="fas fa-running story__icon"></i>
+                                        <h3 class="heading-tertiary">Fast</h3>   
+                                        <p class="story__text">Faster user experience by using lastest technologies & frameworks.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-1-of-4">
-                                <div class="story">
-                                    <i class="fas fa-balance-scale story__icon"></i>
-                                    <h3 class="heading-tertiary">Scalable</h3>   
-                                    <p class="story__text">Easy to read and maintanable code, broken down into logical components.</p>
+                                <div class="col-1-of-4">
+                                    <div class="story">
+                                        <i class="fas fa-balance-scale story__icon"></i>
+                                        <h3 class="heading-tertiary">Scalable</h3>   
+                                        <p class="story__text">Easy to read and maintanable code, broken down into logical components.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-1-of-4">
-                                <div class="story">
-                                    <i class="fas fa-vials story__icon"></i>
-                                    <h3 class="heading-tertiary">Testing</h3>   
-                                    <p class="story__text">Comprehensive and appropriate tests, coverage of potential edge cases.</p>
+                                <div class="col-1-of-4">
+                                    <div class="story">
+                                        <i class="fas fa-vials story__icon"></i>
+                                        <h3 class="heading-tertiary">Testing</h3>   
+                                        <p class="story__text">Comprehensive and appropriate tests, coverage of potential edge cases.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-1-of-4">
-                                <div class="story">
-                                    <i class="fas fa-mouse-pointer story__icon"></i>
-                                    <h3 class="heading-tertiary">Intuitive</h3>   
-                                    <p class="story__text">Intuitive, enjoyable to use and responsive interface. Preference for Clean UI/UX. </p>
+                                <div class="col-1-of-4">
+                                    <div class="story">
+                                        <i class="fas fa-mouse-pointer story__icon"></i>
+                                        <h3 class="heading-tertiary">Intuitive</h3>   
+                                        <p class="story__text">Intuitive, enjoyable to use and responsive interface. Preference for Clean UI/UX. </p>
+                                    </div>
                                 </div>
+                    </div>
+            </section>
+
+            <section class="section-contact" id="contact">
+                    <div class="row">
+                        <div class="contact">
+                            <div class="contact__form">
+                                <form action="mailto:camilanierocosta@hotmail.com" method="POST"  class="form">
+                                    <div class="u-margin-bottom-small">
+                                        <h2 class="heading-secondary">
+                                            Contact me
+                                        </h2>
+                                    </div>
+            
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" placeholder="Name" id="name" required>
+                                        <label for="name" class="form__label">Name</label>
+                                    </div>
+            
+                                    <div class="form__group">
+                                        <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                        <label for="email" class="form__label">Email address</label>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <textarea rows="4" type="text" class="form__textarea" placeholder="Your Message" id="message" required></textarea>
+                                    </div>
+            
+            
+                                    <div class="form__group">
+                                        <button class="button button--green" id="submit">Send</button>
+                                    </div>
+                                    <p id="returnmessage"></p>
+                                </form>
                             </div>
                         </div>
+                    </div>
                 </section>
     
 
@@ -278,9 +312,9 @@
                 </div>
                 <div class="footer__navigation">
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="#"><i class="fab fa-github social-links__icon"></i></a></li>
-                        <li class="footer__item"><a href="#"><i class="fab fa-linkedin-in social-links__icon"></i></a></li>
-                        <li class="footer__item"><a href="#"><i class="fab fa-instagram social-links__icon"></i></a></li>
+                        <li class="footer__item"><a href="https://github.com/cahcnc91" target="_blank" rel="noopener noreferrer"><i class="fab fa-github social-links__icon"></i></a></li>
+                        <li class="footer__item"><a href="https://www.linkedin.com/in/cahcnc91/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in social-links__icon"></i></a></li>
+                        <li class="footer__item"><a href="https://www.instagram.com/cahniero/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram social-links__icon"></i></a></li>
                     </ul>
                 </div>
                 <div class="row footer__copyright">
@@ -358,8 +392,5 @@
         </section>
     -->
     <script src="js/script.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8UsLzaEzCoIiltE8zTmA4a5Gb49SMxNw&callback=initMap">
-    </script>
     </body>
 </html>

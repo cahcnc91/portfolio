@@ -113,71 +113,27 @@ $('a[href*="#"]')
     }
   });
 
-  function initMap() {
-    // Styles a map in night mode.
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 40.674, lng: -73.945},
-      zoom: 11,
-      styles: [
-        {
-            "stylers": [
-                {
-                    "hue": "#baf4c4"
-                },
-                {
-                    "saturation": 10
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "stylers": [
-                {
-                    "color": "#effefd"
-                }
-            ]
-        },
-        {
-            "featureType": "all",
-            "elementType": "labels",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "administrative",
-            "elementType": "labels",
-            "stylers": [
-                {
-                    "visibility": "on"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "transit",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        }
-    ]
+  $(document).ready(function() {
+    $("#submit").click(function() {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+    $("#returnmessage").empty(); // To empty previous error/success message.
+    // Checking for blank fields.
+    if (name == '' || email == '' || message == '') {
+    alert("Please Fill Required Fields");
+    } else {
+    // Returns successful data submission message when the entered information is stored in database.
+    $.post("contact_form.php", {
+    name1: name,
+    email1: email,
+    message1: message,
+    }, function(data) {
+    $("#returnmessage").append(data); // Append returned message to message paragraph.
+    if (data == "Your Query has been received, I will contact you soon.") {
+    $("#form")[0].reset(); // To reset form fields on success.
+    }
     });
-  }
-  
-
-
-
-  
+    }
+    });
+    });

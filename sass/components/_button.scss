@@ -7,14 +7,23 @@
     text-decoration: none;
   }
 
+  &:active,
+  &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+  }
+
   &:hover {
     cursor: pointer;
     transform: translateY(-0.3rem);
+    
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
   }
 
-  &:active {
-    transform: translateY(-0.1rem);
-  }
 
   &--white {
     padding: 1.6rem 6rem;
@@ -58,10 +67,16 @@
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    border: none;
 
     &:hover {
-      background-image: linear-gradient(to right, $color-primary-lighter, $color-primary-darker);
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
     }
   }
 
