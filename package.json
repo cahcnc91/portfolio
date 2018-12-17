@@ -1,6 +1,9 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "9.4.0"
+  },
   "description": "portfolio of camila",
   "main": "index.js",
   "scripts": {
