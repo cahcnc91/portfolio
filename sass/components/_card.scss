@@ -6,6 +6,18 @@
   width: 29rem;
   margin: 0 auto;
 
+  @include respond(tab-port) {
+    width: 72rem;
+    height: auto;
+  }
+
+  @include respond(phone) {
+    width: 40rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
   &__side {
     border-radius: 3px;
     height: 24rem;
@@ -19,8 +31,29 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
+    @include respond(tab-port) {
+      height: auto;
+      width: auto;
+      position: relative;
+      padding: 2rem;
+    }
+
+    @include respond(phone) {
+      height: auto;
+      width: auto;
+      position: relative;
+      padding: 2rem;
+    }
+
+
     &--front {
       background-color: $color-white;
+
+      @include respond(tab-port) {
+        background-color: $color-grey-light-1;
+        height: auto;
+        width: auto;
+      }
     }
 
     &--back {
@@ -30,11 +63,20 @@
         $color-primary-lighter,
         $color-primary-darker
       );
+
+      @include respond(tab-port) {
+        transform: none;
+        display: none;
+      }
     }
   }
 
   &:hover &__side--front {
     transform: rotateY(-180deg);
+
+    @include respond(tab-port) {
+      transform: rotateY(0);
+    }
   }
 
   &:hover &__side--back {
@@ -47,12 +89,24 @@
     border: 2px solid $color-grey-light-1;
     margin: 0.5rem;
 
+    @include respond(tab-port) {
+      height: 58rem;
+      width: auto;
+    }
+
+    @include respond(phone) {
+      height: 30rem;
+      width: auto;
+    }
+
     &--1 {
       background-image: url(../img/puppydate.jpg);
+
     }
 
     &--2 {
       background-image: url(../img/grocery-app.jpg);
+
     }
 
     &--3 {
@@ -67,6 +121,7 @@
     position: absolute;
     top: 19rem;
     right: 1.5rem;
+
   }
 
   &__heading-span {
@@ -98,4 +153,24 @@
   &:last-child {
     margin-bottom: 2rem;
   }
+
+  &__small-screens {
+    text-align: center;
+    &__buttons  {
+      width: 100%;
+      margin: 0 auto;
+    }
+    @media (min-width: 56.25em) {
+      display: none;
+    }
+  }
+
+
+  
 }
+
+
+
+
+
+

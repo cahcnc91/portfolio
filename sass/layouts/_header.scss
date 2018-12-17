@@ -1,5 +1,6 @@
 .header {
   height: 95vh;
+  width: 100%;
   /*
   background-image: linear-gradient(
     to right bottom,
@@ -17,6 +18,10 @@
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+  @include respond(phone) {
+     
+  }
 
   &__logo-box {
     position: absolute;
@@ -40,6 +45,11 @@
     font-size: 6rem;
     font-weight: 500;
     letter-spacing: 1rem;
+
+    @include respond(phone) {
+      letter-spacing: .5rem;
+      font-size: 4rem;
+    }
   }
 
   &__text-static {
@@ -57,7 +67,7 @@
     bottom: 0;
     display: block;
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

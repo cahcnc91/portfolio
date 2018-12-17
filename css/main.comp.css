@@ -27,21 +27,25 @@ ORDER : Baase + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
+  @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
+
+::selection {
+  background-color: #55c57a;
+  color: #fff; }
 
 .button--animated--rotate {
   margin-left: .8rem; }
@@ -72,7 +76,7 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 4rem; } }
   .heading-secondary:hover {
@@ -193,10 +197,10 @@ body {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 4rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .feature-box {
       width: 50%; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .feature-box {
       width: 70%;
       padding: 1; } }
@@ -212,11 +216,11 @@ body {
     width: 70%;
     display: flex;
     margin: 0 auto; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .feature-box__skills {
         justify-content: space-between;
         width: 40%; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .feature-box__skills {
         padding: 0;
         width: 95%; } }
@@ -224,11 +228,11 @@ body {
       width: 50%;
       display: flex;
       margin: 0 auto; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .feature-box__skills--small {
           justify-content: space-between;
           width: 20%; } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .feature-box__skills--small {
           padding: 0;
           width: 95%; } }
@@ -247,11 +251,11 @@ body {
   height: 23rem;
   width: 29rem;
   margin: 0 auto; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .card {
       width: 72rem;
       height: auto; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .card {
       width: 40rem;
       height: auto;
@@ -269,13 +273,13 @@ body {
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .card__side {
         height: auto;
         width: auto;
         position: relative;
         padding: 2rem; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .card__side {
         height: auto;
         width: auto;
@@ -283,7 +287,7 @@ body {
         padding: 2rem; } }
     .card__side--front {
       background-color: #fff; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .card__side--front {
           background-color: #f7f7f7;
           height: auto;
@@ -291,13 +295,13 @@ body {
     .card__side--back {
       transform: rotateY(180deg);
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .card__side--back {
           transform: none;
           display: none; } }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .card:hover .card__side--front {
         transform: rotateY(0); } }
   .card:hover .card__side--back {
@@ -307,11 +311,11 @@ body {
     height: 23rem;
     border: 2px solid #f7f7f7;
     margin: 0.5rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .card__image {
         height: 58rem;
         width: auto; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .card__image {
         height: 30rem;
         width: auto; } }
@@ -418,7 +422,7 @@ body {
   padding: 2.5rem;
   text-align: center;
   transition: transform .3s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .story {
       width: 50%;
       margin: 0 auto; } }
@@ -431,11 +435,11 @@ body {
   .story:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   .form {
     text-align: center; } }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   .form__group {
     margin: 0 auto; } }
 
@@ -454,7 +458,7 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .form__input {
       margin: 0 auto; } }
   .form__input:focus {
@@ -479,7 +483,7 @@ body {
   display: block;
   transition: all .3s;
   margin-bottom: 3rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .form__textarea {
       margin: 0 auto;
       margin-bottom: 4rem; } }
@@ -510,10 +514,10 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 3rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 3rem; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .row {
       padding: 0 3rem; } }
   .row::after {
@@ -525,11 +529,11 @@ body {
     height: 100%; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 5rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 3rem; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -577,7 +581,7 @@ body {
     font-size: 6rem;
     font-weight: 500;
     letter-spacing: 1rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .header__text-box > h1 {
         letter-spacing: .5rem;
         font-size: 4rem; } }
@@ -605,7 +609,7 @@ body {
 
 .about {
   padding: 0 15rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .about {
       padding: 0 3rem;
       margin-bottom: 3rem !important; } }
@@ -647,7 +651,7 @@ i.fab {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
@@ -662,7 +666,7 @@ i.fab {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
       right: 4.5rem; } }
@@ -752,7 +756,7 @@ i.fab {
   padding: 22rem 0 22rem 0;
   margin-top: -15vh;
   margin-bottom: -30vh; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 15rem 0 18rem 0; } }
 
@@ -765,7 +769,7 @@ i.fab {
   position: relative;
   background-attachment: fixed;
   clip-path: polygon(0 0, 100% 19%, 100% 58%, 0 42%); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-stripe {
       display: none; } }
 
@@ -781,10 +785,10 @@ i.fab {
   background-color: #f7f7f7;
   padding: 38rem 0 14rem 0;
   margin-top: -45rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-projects {
       padding: 45rem 0 15rem 0; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .section-projects {
       padding-top: 35rem; } }
 
@@ -795,7 +799,7 @@ i.fab {
 .section-contact {
   padding: 12rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-contact {
       padding: 8rem 0; } }
 
@@ -805,13 +809,13 @@ i.fab {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   height: 50rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .contact {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 80%, rgba(255, 255, 255, 0.5) 100%, transparent 50%), url(../img/developers.jpg); } }
   .contact__form {
     width: 50%;
     padding: 1.5rem 5rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .contact__form {
         width: 100%; } }
 

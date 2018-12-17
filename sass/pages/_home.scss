@@ -3,6 +3,11 @@
   padding: 22rem 0 22rem 0;
   margin-top: -15vh;
   margin-bottom: -30vh;
+
+  @include respond(tab-port) {
+    padding: 15rem 0 18rem 0;
+  }
+
 }
 
 .section-stripe {
@@ -17,7 +22,12 @@
   background-size: cover;
   position: relative;
   background-attachment: fixed;
-  clip-path: polygon(0 1%, 100% 25%, 100% 74%, 0 50%);
+  clip-path: polygon(0 0, 100% 19%, 100% 58%, 0 42%);
+
+  @include respond(tab-port) {
+    display: none;
+  }
+  
 }
 
 .section-features {
@@ -36,10 +46,17 @@
 
 .section-projects {
   background-color: $color-grey-light-1;
-  padding: 20rem 0 15rem 0;
-  margin-top: -25vh;
-}
+  padding: 38rem 0 14rem 0;
+  margin-top: -45rem;
 
+  @include respond(tab-port) {
+    padding: 45rem 0 15rem 0;
+  }
+
+  @include respond(phone) {
+    padding-top: 35rem;
+  }
+}
 
 .section-stripe2 {
   position: relative;
@@ -49,11 +66,15 @@
 .section-contact {
   padding: 12rem 0;
   background-image: linear-gradient(to right bottom, $color-primary-lighter, $color-primary-darker);
+ 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
 }
 
 .contact {
   background-image: linear-gradient(105deg, 
-                                  rgba($color-white, .9) 0%,
+                                  rgba($color-white, .7) 0%,
                                   rgba($color-white, .9) 50%,
                                   transparent 50%) ,
                           url(../img/developers.jpg);
@@ -62,17 +83,31 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
   height: 50rem;
 
+  @include respond(tab-port) {
+    background-image: linear-gradient(105deg, 
+                                  rgba($color-white, .8)80%,
+                                  rgba($color-white, .5)100%,
+                                  transparent 50%) ,
+                          url(../img/developers.jpg);
+  }
+  
+
   &__form {
       width: 50%;
-      padding: 3rem 5rem;
+      padding: 1.5rem 5rem;
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
   }
 }
 
 .footer {
   background-color: $color-grey-dark-2;
-  padding: 8rem 0 5rem 0;
+  padding: 3rem 0;
   font-size: 1.4rem;
   height: 25vh;
+
 }
 
 

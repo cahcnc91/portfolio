@@ -9,6 +9,15 @@
   width: 90%;
   margin: 0 auto;
   margin-bottom: 4rem;
+
+  @include respond(tab-port) {
+    width: 50%;
+  }
+
+  @include respond(phone) {
+    width: 70%;
+    padding: 1;
+  }
   
 
   &__icon {
@@ -29,10 +38,32 @@
     display: flex;
     margin: 0 auto;
 
+    @include respond(tab-port) {
+      justify-content: space-between;
+      width: 40%;
+    }
+
+    @include respond(phone) {
+      padding: 0;
+      width: 95%;
+    }
+
+    
+
     &--small {
       width: 50%;
       display: flex;
       margin: 0 auto;
+      
+      @include respond(tab-port) {
+        justify-content: space-between;
+        width: 20%;
+      }
+
+      @include respond(phone) {
+        padding: 0;
+        width: 95%;
+      }
     }
     
 
