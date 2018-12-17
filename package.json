@@ -9,7 +9,6 @@
   "scripts": {
     "devserver": "live-server",
     "start": "npm-run-all devserver watch:sass",
-    
     "run-css": "node-sass -o css sass/mainbuild.scss",
     "watch:sass": "nodemon -e scss -x \"npm run build-css\"",
     "compile:css": "node-sass sass/main.scss css/main.comp.css",
@@ -25,6 +24,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.4.3",
+    "live-server": "^1.2.1",
     "nodemon": "^1.18.8",
     "npm-run-all": "^4.1.5"
   }
