@@ -283,8 +283,8 @@
             <section class="section-contact" id="contact">
                     <div class="row">
                         <div class="contact">
-                            <div class="contact__form" method="post" action="contact_form.php">
-                                <form action="" class="form" id="contact-form">
+                            <div class="contact__form" >
+                                <form action="https://formspree.io/camilanierocosta@hotmail.com" method="POST" class="form" id="contact-form" />
                                     <div class="u-margin-bottom-small">
                                         <h2 class="heading-secondary">
                                             Contact me
@@ -292,36 +292,30 @@
                                     </div>
             
                                     <div class="form__group">
-                                        <input type="text" class="form__input" placeholder="Name" id="name" required>
+                                        <input type="text" class="form__input" placeholder="Name" name="name" required>
                                         <label for="name" class="form__label">Name</label>
                                     </div>
 
                                     <div class="form__group">
-                                        <input type="text" class="form__input" placeholder="Subject" id="subject" required>
+                                        <input type="text" class="form__input" placeholder="Subject" name="subject" required>
                                         <label for="subject" class="form__label">Subject</label>
                                     </div>
             
                                     <div class="form__group">
-                                        <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                        <input type="email" class="form__input" placeholder="Email address" name="_replyto">
                                         <label for="email" type="email" class="form__label" required>Email address</label>
                                     </div>
 
                                     <div class="form__group">
-                                        <textarea rows="3" type="text" class="form__textarea" placeholder="Your Message" id="message" required></textarea>
+                                        <textarea rows="3" type="text" class="form__textarea" placeholder="Your Message" name="message" required></textarea>
                                     </div>
             
             
                                     <div class="form__group">
-                                        <button class="button button--green" id="submit">Send</button>
+                                        <button class="button button--green" type=
+                                        "submit" submit="submit" id="submit">Send</button>
                                     </div>
-                                    <div id="error_message" style="width:100%; height:100%; display:none; ">
-                                        <p>Error</p>
-                                        Sorry there was an error sending your form.
-                                        </div>
-                                        <div id="success_message" style="width:100%; height:100%; display:none; ">
-                                        <p>Success! Your Message was Sent Successfully.</p>
-                                        </div>
-
+                                    
                                 </form>
                             </div>
                         </div>
