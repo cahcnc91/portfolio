@@ -550,7 +550,7 @@ body {
     width: calc(3 * ((100% - 3*5rem) / 4) + 2 * 5rem); }
 
 .header {
-  height: 95vh;
+  height: 105vh;
   width: 100%;
   /*
   background-image: linear-gradient(
@@ -564,7 +564,7 @@ body {
   background-attachment: fixed;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); }
   .header__logo-box {
     position: absolute;
     top: 3rem;
@@ -753,22 +753,23 @@ i.fab {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 22rem 0 22rem 0;
+  padding: 18rem 0 35rem 0;
   margin-top: -15vh;
-  margin-bottom: -30vh; }
+  margin-bottom: -32vh; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 15rem 0 18rem 0; } }
+      padding: 20rem 0 18rem 0; } }
 
 .section-stripe {
-  top: 12vh;
-  height: 70vh;
+  top: 15rem;
+  height: 65rem;
   padding: 20rem 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/computer.jpg");
   background-size: cover;
   position: relative;
   background-attachment: fixed;
-  clip-path: polygon(0 0, 100% 19%, 100% 58%, 0 42%); }
+  -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%);
+  clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%); }
   @media only screen and (max-width: 56.25em) {
     .section-stripe {
       display: none; } }
@@ -783,7 +784,7 @@ i.fab {
 
 .section-projects {
   background-color: #f7f7f7;
-  padding: 38rem 0 14rem 0;
+  padding: 30rem 0 35rem 0;
   margin-top: -45rem; }
   @media only screen and (max-width: 56.25em) {
     .section-projects {
@@ -823,4 +824,4 @@ i.fab {
   background-color: #333;
   padding: 3rem 0;
   font-size: 1.4rem;
-  height: 25vh; }
+  height: 20vh; }

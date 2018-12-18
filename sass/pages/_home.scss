@@ -1,18 +1,18 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 22rem 0 22rem 0;
+  padding: 18rem 0 35rem 0;
   margin-top: -15vh;
-  margin-bottom: -30vh;
+  margin-bottom: -32vh;
 
   @include respond(tab-port) {
-    padding: 15rem 0 18rem 0;
+    padding: 20rem 0 18rem 0;
   }
 
 }
 
 .section-stripe {
-  top: 12vh;
-  height: 70vh;
+  top: 15rem;
+  height: 65rem;
   padding: 20rem 0;
   background-image: linear-gradient(
       rgba($color-black, 0.8),
@@ -22,7 +22,8 @@
   background-size: cover;
   position: relative;
   background-attachment: fixed;
-  clip-path: polygon(0 0, 100% 19%, 100% 58%, 0 42%);
+  -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%);
+  clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%);
 
   @include respond(tab-port) {
     display: none;
@@ -46,11 +47,13 @@
 
 .section-projects {
   background-color: $color-grey-light-1;
-  padding: 38rem 0 14rem 0;
+  padding: 30rem 0 35rem 0;
   margin-top: -45rem;
+
 
   @include respond(tab-port) {
     padding: 45rem 0 15rem 0;
+    
   }
 
   @include respond(phone) {
@@ -106,7 +109,7 @@
   background-color: $color-grey-dark-2;
   padding: 3rem 0;
   font-size: 1.4rem;
-  height: 25vh;
+  height: 20vh;
 
 }
 
