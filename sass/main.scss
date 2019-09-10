@@ -11,11 +11,12 @@
 @import "components/composition";
 @import "components/feature-box";
 @import "components/card";
-@import 'components/skill';
-@import 'components/round-pic';
-@import 'components/bg-video';
-@import 'components/story';
-@import 'components/form';
+@import "components/skill";
+@import "components/round-pic";
+@import "components/bg-video";
+@import "components/story";
+@import "components/form";
+@import "components/popup";
 
 @import "layouts/grid";
 @import "layouts/header";
@@ -23,4 +24,4 @@
 @import "layouts/footer";
 @import "layouts/navigation";
 
-@import 'pages/home';
+@import "pages/home";

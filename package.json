@@ -8,9 +8,9 @@
   "main": "index.js",
   "scripts": {
     "devserver": "live-server",
-    "start": "npm-run-all devserver watch:sass",
+    "start": "npm-run-all --parallel devserver watch:sass",
     "run:css": "node-sass -o css/styles.css sass/main.scss",
-    "watch:sass": "nodemon -e scss -x \"npm run run:css\"",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:css": "node-sass sass/main.scss css/main.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/main.comp.css -o css/main.prefix.css",
     "compress:css": "node-sass css/main.prefix.css css/styles.css --output-style compress",
