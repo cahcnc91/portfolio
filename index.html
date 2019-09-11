@@ -25,7 +25,7 @@
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#about" class="navigation__link">ABOUT</a></li>
-                    <li class="navigation__item"><a href="#projects" class="navigation__link">PROJECTS</a></li>
+                    <li class="navigation__item"><a href="#project-see" class="navigation__link">PROJECTS</a></li>
                     <li class="navigation__item"><a href="#contact" class="navigation__link">CONTACT ME</a></li>
                 </ul>
             </nav>
@@ -53,9 +53,9 @@
         </header>
 
         <main>
-            <section class="section-about" id="about">
+            <section class="section-about">
                 <div class="row">
-                    <div class="about u-margin-bottom-small">
+                    <div class="about u-margin-bottom-small" id="about">
                         <h2 class="heading-secondary">About</h2>
                         <figure class="figure-shape">
                             <img src="img/camilaluna.png" alt="camila coder web developer" class="figure-shape__image">  
@@ -63,7 +63,7 @@
                         </figure>
                         <div class="about-me">
                             <p class="paragraph">
-                                I'm a full-stack web developer based in NYC. I enjoy turning complex problems into simple apps with cool designs. I'm originally from Brazil, and when I'm not coding, you can find me either hiking around there or upstate NY.
+                                I'm a full-stack web developer based in NYC. 
                             </p>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                             </div>
                             <div class="feature-box__skills">
                                 <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                <p class="feature-box__text">Javascript</p>
+                                <p class="feature-box__text">Javascript, Webpack </p>
                             </div>
                             <div class="feature-box__skills">
                                 <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
@@ -87,11 +87,11 @@
                             </div>
                             <div class="feature-box__skills">
                                 <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                <p class="feature-box__text">React, Redux</p>
+                                <p class="feature-box__text">React, Redux, Saga</p>
                             </div>
                             <div class="feature-box__skills">
                                 <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                <p class="feature-box__text">Meteor, Jquery</p>
+                                <p class="feature-box__text">Material UI</p>
                             </div>                                  
                         </div>
                     </div>
@@ -106,19 +106,19 @@
                             </div>
                              <div class="feature-box__skills--small">
                                 <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                <p class="feature-box__text">Express</p>
+                                <p class="feature-box__text">Postgres, MySQL</p>
                             </div>
                             <div class="feature-box__skills--small">
                                 <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                <p class="feature-box__text">Postgres</p>
+                                <p class="feature-box__text">Mongo, Firebase</p>
                             </div>
                             <div class="feature-box__skills--small">
                                 <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                <p class="feature-box__text">Mongo</p>
+                                <p class="feature-box__text">SQL, Sequelize</p>
                             </div>
                             <div class="feature-box__skills--small">
                                 <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                <p class="feature-box__text">Firebase</p>
+                                <p class="feature-box__text">Sequelize</p>
                             </div>
                         </div>
                     </div>
@@ -132,15 +132,15 @@
                                         </div>
                                         <div class="feature-box__skills--small">
                                             <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                            <p class="feature-box__text">Heroku</p>
+                                            <p class="feature-box__text">GCP, Heroku</p>
                                         </div>
                                         <div class="feature-box__skills--small">
                                             <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                            <p class="feature-box__text">Mocha</p>
+                                            <p class="feature-box__text">Agile</p>
                                         </div>
                                         <div class="feature-box__skills--small">
                                             <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
-                                            <p class="feature-box__text">Jasmine</p>
+                                            <p class="feature-box__text">Jasmine, Mocha</p>
                                         </div>
                                         <div class="feature-box__skills--small">
                                             <i class="fas fa-angle-double-right feature-box__skills--small-icon"></i>
@@ -155,73 +155,95 @@
             </section>
 
             <section class="section-projects" id="projects">
-                <div class="u-center-text u-margin-bottom-medium u-margin-top-medium">
+                <div class="u-center-text u-margin-bottom-medium u-margin-top-medium" id="project-see">
                     <h2 class="heading-secondary">Projects</h2>
                 </div>
                 <div class="row">
-                    <div class="col-1-of-3">
+                    <div class="col-1-of-2">
                         <div class="card">  
                             <div class="card__side card__side--front">
                                 <div class="card__image card__image--1"></div>
                                 <div class="card__small-screens u-center-text">
-                                    <p class="paragraph">Nodejs, React-Redux and Mongo</p>
-
-                                    <!-- <a href="https://cahcnc-puppydate.herokuapp.com/" class="button button--green" target="_blank" rel="noopener noreferrer">VISIT</a> -->
+                                    <p class="paragraph">Nodejs + React + MYSQL</p>
+                                    <a href="#popup-thinkempire" class="button button--transparent-green">LEARN MORE</a>
                                 </div>       
                             </div>
 
                             <div class="card__side card__side--back">
                                 <div class="card__cta">
-                                    <div class="card__info">
-                                      <h3 class="heading-tertiary">PUPPYDATE</h3>
-                                        <p class="paragraph--card">Nodejs</p>
-                                        <p class="paragraph--card">React-Redux</p>
-                                        <p class="paragraph--card">Mongodb</p>
+                                    <div class="card__info u-margin-bottom-medium">
+                                      <h3 class="heading-tertiary">THINK EMPIRE</h3>
+                                        <p class="paragraph--card">Nodejs + React + MYSQL</p>
                                     </div>
+                                    <a href="#popup-thinkempire" class="button button--transparent-green">LEARN MORE</a>
                                     <!-- <a href="https://cahcnc-puppydate.herokuapp.com/" class="button button--transparent-green" target="_blank" rel="noopener noreferrer">VISIT</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-1-of-3">
+                    <div class="col-1-of-2">
+                        <div class="card">  
+                            <div class="card__side card__side--front">
+                                <div class="card__image card__image--1"></div>
+                                <div class="card__small-screens u-center-text">
+                                    <p class="paragraph">Nodejs + React + MongoDB</p>
+                                    <a href="#popup-puppydate" class="button button--transparent-green">LEARN MORE</a>
+                                </div>       
+                            </div>
+
+                            <div class="card__side card__side--back">
+                                <div class="card__cta">
+                                    <div class="card__info u-margin-bottom-medium">
+                                      <h3 class="heading-tertiary">PUPPYDATE</h3>
+                                        <p class="paragraph--card">Nodejs + React + MongoDB</p>
+                                    </div>
+                                    <a href="#popup-puppydate" class="button button--transparent-green">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
                         <div class="card">  
                             <div class="card__side card__side--front">
                                 <div class="card__image card__image--2"></div>
                                 <div class="card__small-screens u-center-text">
-                                    <p class="paragraph">Meteor, React, Mongo</p>
+                                    <p class="paragraph u-margin-bottom-medium">Meteor + React + MongoDB</p>
+                                    <a href="#popup-grocery" class="button button--transparent-green">LEARN MORE</a>
                                     <!-- <a href="https://cahcnc91-grocerylist.herokuapp.com/" class="button button--green" target="_blank" rel="noopener noreferrer">VISIT</a> -->
                                 </div>  
                             </div>
                             <div class="card__side card__side--back">
                                 <div class="card__cta">
-                                    <div class="card__info">
+                                    <div class="card__info u-margin-bottom-medium">
                                         <h3 class="heading-tertiary">GROCERYLIST</h3>
-                                        <p class="paragraph--card">Meteor</p>
-                                        <p class="paragraph--card">React</p>
-                                        <p class="paragraph--card">Sass</p>
+                                        <p class="paragraph--card">Meteor + React + MongoDB</p>
                                     </div>
+                                    <a href="#popup-grocery" class="button button--transparent-green">LEARN MORE</a>
                                     <!-- <a href="https://cahcnc91-grocerylist.herokuapp.com/" class="button button--transparent-green" target="_blank" rel="noopener noreferrer">VISIT</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-1-of-3">
+                    <div class="col-1-of-2">
                         <div class="card">  
                             <div class="card__side card__side--front">
                                 <div class="card__image card__image--3"></div>
                                 <div class="card__small-screens u-center-text">
-                                    <p class="paragraph">Nodejs, Postgres, Bootstrap</p>
-                                    <a href="#popup" class="button button--transparent-green">Learn More</a>
+                                    <p class="paragraph">Nodejs + EJS + Postgres</p>
+                                    <a href="#popup-wikipedia" class="button button--transparent-green">LEARN MORE</a>
                                     <!-- <a href="https://cahcnc91-cookopedia.herokuapp.com/" class="button button--green" target="_blank" rel="noopener noreferrer">VISIT</a> -->
                                 </div>  
                             </div>
                             <div class="card__side card__side--back">
                                     <div class="card__cta">
-                                        <div class="card__info">
+                                        <div class="card__info u-margin-bottom-medium">
                                             <h3 class="heading-tertiary">COOKOPEDIA</h3>
-                                            <p class="paragraph--card">Nodejs, Postgres, Material Design</p>
+                                            <p class="paragraph--card">Nodejs + EJS + Postgres</p>
                                         </div>
-                                        <a href="#popup" class="button button--transparent-green">Learn More</a>
+                                        <a href="#popup-wikipedia" class="button button--transparent-green">LEARN MORE</a>
                                         <!-- <a href="https://cahcnc91-cookopedia.herokuapp.com/" class="button button--transparent-green" target="_blank" rel="noopener noreferrer">VISIT</a> -->
                                     </div>
                             </div>
@@ -342,15 +364,54 @@
                 </div>
             </footer>
 
-            <div id="popup" class="popup">
+            <div id="popup-puppydate" class="popup">
                 <div class="popup__content">
                     <div class="popup__left">
                         <img src="img/grocery-app.jpg" alt="" class="popup__image"/>
                         <img src="img/grocery-app.jpg" alt="" class="popup__image"/>
                     </div>
                     <div class="popup__right">
-                        <a href="#projects" class="popup__close">&times;</a>
-                        <h3>Test</h3>
+                        <a href="#project" class="popup__close">&times;</a>
+                        <h1>Puppydate</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-wikipedia" class="popup">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="img/grocery-app.jpg" alt="" class="popup__image"/>
+                        <img src="img/grocery-app.jpg" alt="" class="popup__image"/>
+                    </div>
+                    <div class="popup__right">
+                        <a href="#project" class="popup__close">&times;</a>
+                        <h1>Wikipedia</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-grocery" class="popup">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="img/grocery-app.jpg" alt="" class="popup__image"/>
+                        <img src="img/grocery-app.jpg" alt="" class="popup__image"/>
+                    </div>
+                    <div class="popup__right">
+                        <a href="#project" class="popup__close">&times;</a>
+                        <h1>Grocery List</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-thinkempire" class="popup">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="img/grocery-app.jpg" alt="" class="popup__image"/>
+                        <img src="img/grocery-app.jpg" alt="" class="popup__image"/>
+                    </div>
+                    <div class="popup__right">
+                        <a href="#project" class="popup__close">&times;</a>
+                        <h1>Think Empire</h1>
                     </div>
                 </div>
             </div>

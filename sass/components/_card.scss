@@ -2,9 +2,8 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 23rem;
-  width: 29rem;
-  margin: 0 auto;
+  height: 300px;
+  width: 390px;
 
   @include respond(tab-port) {
     width: 72rem;
@@ -20,7 +19,7 @@
 
   &__side {
     border-radius: 3px;
-    height: 24rem;
+    height: 300px;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -44,7 +43,6 @@
       position: relative;
       padding: 2rem;
     }
-
 
     &--front {
       background-color: $color-white;
@@ -85,7 +83,7 @@
 
   &__image {
     background-size: cover;
-    height: 23rem;
+    height: 300px;
     border: 2px solid $color-grey-light-1;
     margin: 0.5rem;
 
@@ -101,12 +99,10 @@
 
     &--1 {
       background-image: url(../img/puppydate.jpg);
-
     }
 
     &--2 {
       background-image: url(../img/grocery-app.jpg);
-
     }
 
     &--3 {
@@ -121,7 +117,6 @@
     position: absolute;
     top: 19rem;
     right: 1.5rem;
-
   }
 
   &__heading-span {
@@ -135,14 +130,17 @@
 
   &__cta {
     position: absolute;
-    top: -8rem;
+    width: 100%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     text-align: center;
   }
 
   &__info {
     color: $color-white;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -156,7 +154,7 @@
 
   &__small-screens {
     text-align: center;
-    &__buttons  {
+    &__buttons {
       width: 100%;
       margin: 0 auto;
     }
@@ -164,13 +162,4 @@
       display: none;
     }
   }
-
-
-  
 }
-
-
-
-
-
-
