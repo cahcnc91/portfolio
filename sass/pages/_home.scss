@@ -2,12 +2,11 @@
   background-color: $color-grey-light-1;
   padding: 18rem 0 35rem 0;
   margin-top: -15vh;
-  margin-bottom: -32vh;
+  margin-bottom: -50vh;
 
   @include respond(tab-port) {
     padding: 20rem 0 18rem 0;
   }
-
 }
 
 .section-stripe {
@@ -28,7 +27,6 @@
   @include respond(tab-port) {
     display: none;
   }
-  
 }
 
 .section-features {
@@ -47,13 +45,11 @@
 
 .section-projects {
   background-color: $color-grey-light-1;
-  padding: 30rem 0 35rem 0;
+  padding: 30rem 0 10rem 0;
   margin-top: -45rem;
-
 
   @include respond(tab-port) {
     padding: 45rem 0 15rem 0;
-    
   }
 
   @include respond(phone) {
@@ -68,40 +64,47 @@
 
 .section-contact {
   padding: 12rem 0;
-  background-image: linear-gradient(to right bottom, $color-primary-lighter, $color-primary-darker);
- 
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-lighter,
+    $color-primary-darker
+  );
+
   @include respond(tab-port) {
     padding: 8rem 0;
   }
 }
 
 .contact {
-  background-image: linear-gradient(105deg, 
-                                  rgba($color-white, .7) 0%,
-                                  rgba($color-white, .9) 50%,
-                                  transparent 50%) ,
-                          url(../img/developers.jpg);
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.7) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/developers.jpg);
   background-size: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
   height: 50rem;
 
   @include respond(tab-port) {
-    background-image: linear-gradient(105deg, 
-                                  rgba($color-white, .8)80%,
-                                  rgba($color-white, .5)100%,
-                                  transparent 50%) ,
-                          url(../img/developers.jpg);
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.8) 80%,
+        rgba($color-white, 0.5) 100%,
+        transparent 50%
+      ),
+      url(../img/developers.jpg);
   }
-  
 
   &__form {
-      width: 50%;
-      padding: 1.5rem 5rem;
+    width: 50%;
+    padding: 1.5rem 5rem;
 
-      @include respond(tab-port) {
-        width: 100%;
-      }
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 }
 
@@ -110,7 +113,4 @@
   padding: 3rem 0;
   font-size: 1.4rem;
   height: 20vh;
-
 }
-
-
