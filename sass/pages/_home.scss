@@ -45,11 +45,11 @@
 
 .section-projects {
   background-color: $color-grey-light-1;
-  padding: 30rem 0 10rem 0;
+  padding: 30rem 25rem 10rem 25rem;
   margin-top: -45rem;
 
-  @include respond(tab-port) {
-    padding: 45rem 0 15rem 0;
+  @include respond(tab-land) {
+    padding: 45rem 10rem 15rem 10rem;
   }
 
   @include respond(phone) {

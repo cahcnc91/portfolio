@@ -2,17 +2,12 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 325px;
+  height: 280px;
   width: 100%;
-
-  @include respond(tab-port) {
-    width: 72rem;
-    height: auto;
-  }
 
   @include respond(phone) {
     width: 40rem;
-    height: auto;
+    height: 25rem;
     display: block;
     margin: 0 auto;
   }
@@ -83,7 +78,7 @@
 
   &__image {
     background-size: cover;
-    height: 320px;
+    height: 280px;
     border: 2px solid $color-grey-light-1;
     margin: 0.5rem;
 
@@ -93,8 +88,8 @@
     }
 
     @include respond(phone) {
-      height: 30rem;
-      width: auto;
+      height: 25rem;
+      width: 40rem;
     }
 
     &--1 {
