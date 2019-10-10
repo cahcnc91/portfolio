@@ -87,6 +87,19 @@ body {
   font-size: 2.6rem;
   font-weight: 700; }
 
+.heading-small {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-small {
+      font-size: 1.5rem; } }
+
 .paragraph {
   font-size: 1.8rem; }
   .paragraph:not(:last-child) {
@@ -537,60 +550,38 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup__close:link, .popup__close:visited {
-    color: #777;
+    color: black;
     position: absolute;
     top: 0;
     right: 2rem;
     font-size: 3rem;
     text-decoration: none;
     display: inline-block; }
-  .popup__left {
-    width: 500px;
-    height: 100 .popup__left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-  .popup__right {
-    width: calc(100% - 515px);
-    height: 100%;
-    margin: 3rem 5rem; }
   .popup__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 85%;
-    height: 515px;
-    background-color: #fff;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    display: flex;
-    flex-direction: row; }
-  .popup__content-slides {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 500px;
-    height: 100%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: flex;
     flex-direction: column; }
   .popup__text {
-    font-size: 13px; }
-  .popup__top {
-    height: 50%; }
-  .popup__bottom {
-    height: 50%;
-    overflow-y: scroll; }
-    .popup__bottom__wrapper {
-      margin-left: 3rem;
-      margin-right: 3rem; }
+    font-size: 14px; }
+  .popup__wrapper {
+    margin: 4rem 4rem; }
   .popup__image {
     display: block;
     width: 100%; }
+
+.dots-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center; }
 
 /* Slideshow container */
 .slideshow-container {
@@ -608,13 +599,13 @@ body {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   margin-top: -22px;
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   user-select: none;
@@ -624,11 +615,10 @@ body {
 
 /* Position the "next button" to the right */
 .prev {
-  left: 10%; }
+  left: 2%; }
 
 .next {
-  right: 10%;
-  border-radius: 50%; }
+  right: 2%; }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -644,14 +634,6 @@ body {
   bottom: 8px;
   width: 100%;
   text-align: center; }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0; }
 
 /* The dots/bullets/indicators */
 .dot {

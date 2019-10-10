@@ -139,7 +139,8 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   slides[slideIndex - 1].style.width = "100%";
+  slides[slideIndex - 1].style.height = "100%";
   slides[slideIndex - 1].style.display = "flex";
-  slides[slideIndex - 1].style.justifyContent = "center";
+  slides[slideIndex - 1].style.flexDirection = "column";
   dots[slideIndex - 1].className += " active";
 }
