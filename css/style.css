@@ -550,13 +550,14 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup__close:link, .popup__close:visited {
-    color: black;
+    color: #494949;
     position: absolute;
     top: 0;
     right: 2rem;
     font-size: 3rem;
     text-decoration: none;
-    display: inline-block; }
+    display: inline-block;
+    z-index: 10000; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -569,7 +570,7 @@ body {
     display: flex;
     flex-direction: column; }
   .popup__text {
-    font-size: 14px; }
+    font-size: 15px; }
   .popup__wrapper {
     margin: 4rem 4rem; }
   .popup__image {
@@ -638,8 +639,8 @@ body {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
