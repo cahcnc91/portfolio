@@ -274,17 +274,11 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 280px;
+  height: 50rem;
   width: 100%; }
-  @media only screen and (max-width: 37.5em) {
-    .card {
-      width: 40rem;
-      height: 25rem;
-      display: block;
-      margin: 0 auto; } }
   .card__side {
     border-radius: 3px;
-    height: 100%;
+    height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -294,32 +288,11 @@ body {
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    @media only screen and (max-width: 56.25em) {
-      .card__side {
-        height: auto;
-        width: auto;
-        position: relative;
-        padding: 2rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .card__side {
-        height: auto;
-        width: auto;
-        position: relative;
-        padding: 2rem; } }
     .card__side--front {
       background-color: #fff; }
-      @media only screen and (max-width: 56.25em) {
-        .card__side--front {
-          background-color: #f7f7f7;
-          height: auto;
-          width: auto; } }
     .card__side--back {
       transform: rotateY(180deg);
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-      @media only screen and (max-width: 56.25em) {
-        .card__side--back {
-          transform: none;
-          display: none; } }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
     @media only screen and (max-width: 56.25em) {
@@ -327,62 +300,89 @@ body {
         transform: rotateY(0); } }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
-  .card__image {
+  .card__picture {
     background-size: cover;
-    height: 280px;
-    border: 2px solid #f7f7f7;
-    margin: 0.5rem; }
+    height: 23rem; }
     @media only screen and (max-width: 56.25em) {
-      .card__image {
-        height: 58rem;
-        width: auto; } }
-    @media only screen and (max-width: 37.5em) {
-      .card__image {
-        height: 25rem;
-        width: 40rem; } }
-    .card__image--1 {
-      background-image: url(../img/puppydate.jpg); }
-    .card__image--2 {
-      background-image: url(../img/grocery-app.jpg); }
-    .card__image--3 {
-      background-image: url(../img/wikipedia.jpg); }
-    .card__image--4 {
+      .card__picture {
+        height: 44rem; } }
+    .card__picture--1 {
       background-image: url(../img/thinkempire.png); }
+    .card__picture--2 {
+      background-image: url(../img/puppydate.jpg); }
+    .card__picture--3 {
+      background-image: url(../img/grocery-app.jpg); }
   .card__heading {
     font-weight: 300;
     font-size: 2.4rem;
     color: #fff;
     position: absolute;
-    top: 19rem;
-    right: 1.5rem; }
-  .card__heading-span {
-    padding: 0.5rem 1rem;
-    background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.65), rgba(119, 119, 119, 0.65)); }
+    top: 21rem;
+    right: 1rem;
+    text-align: right;
+    width: 70%; }
+    @media only screen and (max-width: 56.25em) {
+      .card__heading {
+        display: none; } }
+  .card__heading--span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
   .card__cta {
     position: absolute;
-    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 90%;
     text-align: center; }
+  .card__name {
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 6rem; }
   .card__info {
     color: #fff;
     text-align: center;
     width: 100%; }
-
-.paragraph--card {
-  font-size: 1.6rem;
-  margin-bottom: 0; }
-  .paragraph--card:last-child {
-    margin-bottom: 2rem; }
-  .paragraph--card__small-screens {
-    text-align: center; }
-    .paragraph--card__small-screens__buttons {
-      width: 100%;
+  .card__details {
+    padding: 5rem 3rem 2rem 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
       margin: 0 auto; }
-    @media (min-width: 56.25em) {
-      .paragraph--card__small-screens {
-        display: none; } }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__cta {
+        position: relative;
+        top: 0%;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__name {
+        font-size: 4rem; } }
 
 .skill {
   width: 75%;
@@ -569,6 +569,10 @@ body {
     border-radius: 3px;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__content {
+        width: 100%;
+        height: auto; } }
   .popup__text {
     font-size: 15px; }
   .popup__wrapper {
@@ -689,6 +693,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .row {
       padding: 0 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .row {
+      padding: 0; } }
   .row::after {
     content: "";
     display: table;
@@ -953,14 +960,14 @@ i.fab {
 
 .section-projects {
   background-color: #f7f7f7;
-  padding: 30rem 25rem 10rem 25rem;
+  padding: 30rem 8rem 10rem 8rem;
   margin-top: -45rem; }
   @media only screen and (max-width: 75em) {
     .section-projects {
-      padding: 45rem 10rem 15rem 10rem; } }
+      padding: 40rem 5rem 15rem 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-projects {
-      padding-top: 35rem; } }
+      padding: 30rem 3rem 10rem 3rem; } }
 
 .section-stripe2 {
   position: relative;

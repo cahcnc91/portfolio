@@ -19,13 +19,13 @@
   "author": "Camila",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "postcss-cli": "^6.0.1"
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^7.1.0"
   },
   "dependencies": {
-    "autoprefixer": "^9.4.3",
+    "autoprefixer": "^9.7.3",
     "live-server": "^1.2.1",
-    "nodemon": "^1.18.8",
+    "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5"
   }
 }

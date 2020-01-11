@@ -38,6 +38,11 @@
     border-radius: 3px;
     display: flex;
     flex-direction: column;
+
+    @include respond(tab-port) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__text {

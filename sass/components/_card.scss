@@ -2,19 +2,12 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 280px;
+  height: 50rem;
   width: 100%;
-
-  @include respond(phone) {
-    width: 40rem;
-    height: 25rem;
-    display: block;
-    margin: 0 auto;
-  }
 
   &__side {
     border-radius: 3px;
-    height: 100%;
+    height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -25,42 +18,17 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
-    @include respond(tab-port) {
-      height: auto;
-      width: auto;
-      position: relative;
-      padding: 2rem;
-    }
-
-    @include respond(phone) {
-      height: auto;
-      width: auto;
-      position: relative;
-      padding: 2rem;
-    }
-
     &--front {
       background-color: $color-white;
-
-      @include respond(tab-port) {
-        background-color: $color-grey-light-1;
-        height: auto;
-        width: auto;
-      }
     }
 
     &--back {
       transform: rotateY(180deg);
       background-image: linear-gradient(
-        to right bottom,
-        $color-primary-lighter,
-        $color-primary-darker
-      );
-
-      @include respond(tab-port) {
-        transform: none;
-        display: none;
-      }
+      to right bottom,
+      $color-primary-lighter,
+      $color-primary-darker
+      )
     }
   }
 
@@ -76,37 +44,32 @@
     transform: rotateY(0deg);
   }
 
-  &__image {
+  &__picture {
     background-size: cover;
-    height: 280px;
-    border: 2px solid $color-grey-light-1;
-    margin: 0.5rem;
+    height: 23rem;
 
     @include respond(tab-port) {
-      height: 58rem;
-      width: auto;
+      height: 44rem;
     }
-
-    @include respond(phone) {
-      height: 25rem;
-      width: 40rem;
-    }
+    
 
     &--1 {
-      background-image: url(../img/puppydate.jpg);
+      background-image: url(../img/thinkempire.png);
+      // linear-gradient(
+      //   to right bottom,
+      //   $color-secondary-lighter,
+      //   $color-secondary-darker
+      //   )
     }
 
     &--2 {
-      background-image: url(../img/grocery-app.jpg);
+      background-image: url(../img/puppydate.jpg);
     }
 
     &--3 {
-      background-image: url(../img/wikipedia.jpg);
+      background-image: url(../img/grocery-app.jpg);
     }
 
-    &--4 {
-      background-image: url(../img/thinkempire.png);
-    }
   }
 
   &__heading {
@@ -114,26 +77,43 @@
     font-size: 2.4rem;
     color: #fff;
     position: absolute;
-    top: 19rem;
-    right: 1.5rem;
+    top: 21rem;
+    right: 1rem;
+    text-align: right;
+    width: 70%;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
-  &__heading-span {
-    padding: 0.5rem 1rem;
+  &__heading--span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     background-image: linear-gradient(
       to right bottom,
-      rgba($color-grey-light-1, 0.65),
-      rgba($color-grey-dark, 0.65)
+      rgba($color-primary-lighter, 0.85),
+      rgba($color-primary-darker, 0.85)
     );
   }
 
-  &__cta {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      text-align: center;
+  }
+
+  &__name {
+      font-size: 4rem;
+      text-align: center;
+      color: $color-white;
+      margin-bottom: 6rem;
   }
 
   &__info {
@@ -141,24 +121,70 @@
     text-align: center;
     width: 100%;
   }
+
+  &__details {
+    padding: 5rem 3rem 2rem 3rem;
+
+    ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+
+        li {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-grey-light-2;
+            }
+        }
+    }
 }
 
-.paragraph--card {
-  font-size: 1.6rem;
-  margin-bottom: 0;
+ //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover: none) {
 
-  &:last-child {
-    margin-bottom: 2rem;
-  }
+height: auto;
+border-radius: 3px;
+background-color: $color-white;
+box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-  &__small-screens {
-    text-align: center;
-    &__buttons {
-      width: 100%;
-      margin: 0 auto;
-    }
-    @media (min-width: 56.25em) {
-      display: none;
-    }
+&__side {
+  height: auto;
+  position: relative;
+  box-shadow: none;
+
+  &--back {
+      transform: rotateY(0);
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
   }
 }
+
+&:hover &__side--front {
+  transform: rotateY(0);
+}
+
+
+&__details {
+  padding: 1rem 3rem;
+}
+
+// FRONT SIDE STYLING
+&__cta {
+  position: relative;
+  top: 0%;
+  left: 0;
+  transform: translate(0);
+  width: 100%;
+  padding: 7rem 4rem 4rem 4rem;
+}
+
+&__name {
+  font-size: 4rem;
+}
+}
+}
+
+
