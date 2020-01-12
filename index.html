@@ -63,8 +63,9 @@
                         </figure>
 
                             <p class="paragraph u-margin-top-s">
-                                I'm a full-stack developer based in NYC, currently working for a startup called ThinkEmpire. 
-                                I love coding, I'm extremely social and I'm obsessed with being productive (I just feel great when I'm able to solve THAT problem before the day is over).
+                                I'm a full-stack developer based in NYC, currently working for a real estate data startup. 
+                                I love coding, I'm extremely social and I'm obsessed with being productive 
+                               <br/>(I just feel great when I'm able to solve THAT problem before the day is over).
                             </p>
                     </div>
                 </div>
@@ -461,54 +462,51 @@
                        <!-- Slideshow container -->
                         <div class="slideshow-container">
                             <a href="#project" class="popup__close">&times;</a>
-
-                            <!-- Full-width images with number and caption text -->
                             
                             <div class="mySlides fade">
-                                <div style="width:100%;height:0;padding-bottom:51%;position:relative;"><iframe src="https://giphy.com/embed/WsLMLQW6bhSJ2vOcVU" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                                <img src="img/thinkempire1.gif" alt="thinkempire" class="image-gif">
                                 <div class="popup__wrapper">
                                     <div class="u-center-text u-margin-bottom-small">
-                                        <h2 class="heading-small">Think Empire</h2>
+                                        <h2 class="heading-medium">Think Empire</h2>
                                     </div>
                                     <p class="popup__text">
-                                            Thinkempire is a data-driven app that combines 
+                                            This is a data-driven app that combines 
                                             the use of Google Maps and NYC real estate data. 
                                     </p>
-                                    <p class="popup__text">
-                                        I have been working full time for Think Empire for the past year as a Full Stack Developer, creating UI, APIs, documentation and tests for a range of different features.
+                                    <p class="popup__text u-margin-bottom-small"">
+                                        I have been working full time for this company for the past year as a Full Stack Developer, creating and updating current UI, APIs, documentation and tests for a range of different features.
                                     </p>
                                 </div>
                             </div>
 
                             <div class="mySlides fade">
-                                <div style="width:100%;height:0;padding-bottom:51%;position:relative;"><iframe src="https://giphy.com/embed/LkUKvJpIv9sDV8BcmQ" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                                <img src="img/thinkempire2.gif" alt="thinkempire2" class="image-gif">
                                 <div class="popup__wrapper">
                                     <p class="popup__text">
-                                        <b>Problem: </b>Time of load of all building information was too long.
+                                        <b>Problem: </b>Time of load of all information for a property was too long.
                                     </p>
-                                    <p class="popup__text">
-                                        <b>Solution: </b>Refactored state in redux store and actions, from one object containing all properties related to a building to single separated states, to reduce the amount of re-renders of components.
-                                        also refactored all components from class based to functional, and only loading information upon request (when clicked).
+                                    <p class="popup__text u-margin-bottom-small"">
+                                        <b>Solution: </b>Refactored state in redux store to reduce the amount of re-renders of components, class based components into to functional, and loading pattern upon request (when clicked).
                                     </p>
                                 </div>
                             </div>
 
                             <div class="mySlides fade">
-                                    <div style="width:100%;height:0;padding-bottom:51%;position:relative;"><iframe src="https://giphy.com/embed/Pjg8u7LbAZji4Ffg6E" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                                <img src="img/thinkempire3.gif" alt="thinkempire3" class="image-gif">
                                 <div class="popup__wrapper">
-                                        <p class="popup__text">
-                                            <b>Problem:</b> The user needs the hability of filtering properties based on different criteria.  
-                                        </p>
-                                        <p class="popup__text">
-                                            <b>Solution: </b> Every criteria selected gives a real-time count 
-                                            of the amount of results that will be displayed. After the user hits filter, the UI shows both a list and correspondent pins on map for properties 
-                                            available in the database that fit those criteria.
-                                        </p>
+                                    <p class="popup__text">
+                                        <b>Problem:</b> The user needs the hability of filtering properties based on different criteria.  
+                                    </p>
+                                    <p class="popup__text u-margin-bottom-small">
+                                        <b>Solution: </b> Every criteria selected gives a real-time count 
+                                        of the amount of results that will be displayed. After the user hits filter, the UI shows both a list and correspondent pins on map for properties 
+                                        available in the database that fit those criteria, there is pagination and load balancer, so only 20 properties are loaded at a time.
+                                    </p>
                                 </div>
                             </div>
                         
                             <div class="mySlides fade">
-                                <div style="width:100%;height:0;padding-bottom:51%;position:relative;"><iframe src="https://giphy.com/embed/Pmdym0ZCjBlezLJSDu" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                                <img src="img/thinkempire4.gif" alt="thinkempire4" class="image-gif">
                                 <div class="popup__wrapper">
                                     <p class="popup__text">
                                         <b>Problem: </b>Hability to save properties to lists and create saved seaches that save criteria of searches.
@@ -521,13 +519,13 @@
                             </div>
 
                             <div class="mySlides fade">
-                                    <div style="width:100%;height:0;padding-bottom:51%;position:relative;"><iframe src="https://giphy.com/embed/Rkua1yIeeznBqdLAPK" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                                <img src="img/thinkempire5.gif" alt="thinkempire5" class="image-gif">
                                 <div class="popup__wrapper">
                                     <p class="popup__text">
-                                        <b>Problem: </b>Lists too large (1000+ properties) taking too long to load.
+                                        <b>Problem: </b>Different search bar for different kinds of data, such as people and properties.
                                     </p>
                                     <p class="popup__text">
-                                        <b>Solution: </b>Addition of load-balancer, loads 20 properties at a time every scrolling.
+                                        <b>Solution: </b>Universal Search bar, allows user to look for any data within the app.
                                     </p>
                                 </div>
                             </div>

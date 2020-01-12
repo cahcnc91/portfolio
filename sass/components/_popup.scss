@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       width: 100%;
       height: auto;
     }
@@ -152,15 +152,9 @@
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
-.image-carousel {
-  height: 350px;
-  width: 500px;
-}
-
-.image-left-popup {
-  height: 250px;
-  width: 500px;
+.image-gif{
+  width: 100%;
+  height: 240px;
 }
 
 @-webkit-keyframes fade {
