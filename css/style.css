@@ -1001,6 +1001,18 @@ i.fab {
     .section-contact {
       padding: 8rem 0; } }
 
+.section-code-samples {
+  padding: 8rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-code-samples {
+      padding: 4rem 0; } }
+
+.iframe {
+  padding: 0 8rem; }
+  @media only screen and (max-width: 56.25em) {
+    .iframe {
+      padding: 0; } }
+
 .contact {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/developers.jpg);
   background-size: 100%;
