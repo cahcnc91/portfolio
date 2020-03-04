@@ -92,6 +92,10 @@ body {
   font-weight: 700;
   color: #fff; }
 
+.heading-code-samples {
+  font-size: 2.6rem;
+  font-weight: 700; }
+
 .heading-medium {
   display: inline-block;
   font-size: 4rem;
@@ -1012,6 +1016,9 @@ i.fab {
   @media only screen and (max-width: 56.25em) {
     .iframe {
       padding: 0; } }
+
+.replit-logo:hover {
+  color: #55c57a; }
 
 .contact {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/developers.jpg);
