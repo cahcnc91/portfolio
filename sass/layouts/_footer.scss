@@ -1,6 +1,8 @@
 .footer {
-   &__logo-box {
-
+   &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
    }
 
    &__navigation {
@@ -28,12 +30,11 @@
    }
 }
 
-i.fab {
+.social-links__icon {
   color: $color-grey-light-1;
 
   &:hover,
     &:active {
-      color: $color-primary;
-      box-shadow: 0 1rem 2rem rgba($color-black, .4);
+      box-shadow: 0 1.5rem 3rem rgba($color-black, .5);
     }
 }

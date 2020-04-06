@@ -35,8 +35,17 @@
   flex-direction: row;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex {
   display: flex;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
